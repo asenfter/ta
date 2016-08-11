@@ -16,9 +16,9 @@ public class HashUtilsTest {
 
     @Test
     public void test() {
-        int hashValue = HashUtils.semanticHash(STRINGS[0].toCharArray());
+        int hashValue = HashUtils.semanticHashOf(STRINGS[0].toCharArray());
         for (int i = 1; i < STRINGS.length; i++) {
-            final int current = HashUtils.semanticHash(STRINGS[i].toCharArray());
+            final int current = HashUtils.semanticHashOf(STRINGS[i].toCharArray());
             Assert.assertEquals(hashValue, current);
             hashValue = current;
         }
@@ -51,7 +51,7 @@ public class HashUtilsTest {
 
         @Override
         public int hashCode() {
-            return HashUtils.semanticHash(data.toCharArray());
+            return HashUtils.semanticHashOf(data.toCharArray());
         }
 
         @Override
