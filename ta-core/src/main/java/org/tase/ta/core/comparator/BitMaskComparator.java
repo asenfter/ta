@@ -7,6 +7,8 @@ import java.util.Comparator;
 /**
  * Very fast scorer for equality of char sequences.
  * Ignores ordering and multiple char occurrences.
+ *
+ * @author Andreas Senfter (https://github.com/asenfter)
  */
 public class BitMaskComparator implements Comparator<String> {
 

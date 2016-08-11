@@ -1,5 +1,8 @@
 package org.tase.ta.core.util;
 
+/**
+ * @author Andreas Senfter (https://github.com/asenfter)
+ */
 public class BitUtils {
     //encode to 64Bit
     public static long bitMask(char[] chars) {

@@ -2,14 +2,16 @@ package org.tase.ta.core.util;
 
 import org.tase.ta.core.aware.FuzzyAware;
 
-
+/**
+ * @author Andreas Senfter (https://github.com/asenfter)
+ */
 public class HashUtils implements FuzzyAware {
 
-    /**
+    /*
      * Calculates hashes by ignoring letter ordering after 4 characters
      * "textanalytics" matches "textanaltyics"
      */
-    public static int semanticHash(char[] chars) {
+    public static int semanticHashOf(char[] chars) {
         final int len = Math.min(LENGTH_THRESHOLD, chars.length);
         final int len1 = Math.min(4, chars.length);
         int hashValue1 = chars[0];

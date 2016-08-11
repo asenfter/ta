@@ -6,6 +6,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.tase.ta.core.comparator.BitMaskComparator;
 
+/**
+ * @author Andreas Senfter (https://github.com/asenfter)
+ */
 public class BitUtilsTest {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(BitUtilsTest.class);

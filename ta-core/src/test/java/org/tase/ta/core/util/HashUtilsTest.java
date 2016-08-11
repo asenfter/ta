@@ -7,6 +7,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * @author Andreas Senfter (https://github.com/asenfter)
+ */
 public class HashUtilsTest {
 
     private static final String[] STRINGS = new String[]{"textanalytics", "textanlayti", "textanaltyics", "textanlaytics"};
