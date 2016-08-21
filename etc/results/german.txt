@@ -1,5 +1,5 @@
 ##
-## Word embedding test based on 200k crawled german texts.
+## Word embedding test based on 50k crawled german texts.
 ##
 ## some results:
 ##
