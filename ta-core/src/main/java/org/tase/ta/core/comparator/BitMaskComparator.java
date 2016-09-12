@@ -37,9 +37,9 @@ public class BitMaskComparator implements Comparator<String> {
         final long mask1 = BitUtils.bitMask(word1.toCharArray());
         final long mask2 = BitUtils.bitMask(word2.toCharArray());
         final int diff = Long.bitCount(mask1 ^ mask2);
-        int match = Long.bitCount(mask1 & mask2);
+        final int match = Long.bitCount(mask1 & mask2);
         final int len = word1.length() + word2.length();
-        int lenDiff = Math.abs(word1.length() - word2.length());
+        final int lenDiff = Math.abs(word1.length() - word2.length());
         return (int) (base * len * match / ((matchWeight * match + diff) * (lengthWeight * len + lenDiff)));
     }
 }
