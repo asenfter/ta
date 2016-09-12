@@ -12,7 +12,8 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class HashUtilsTest {
 
-    private static final String[] STRINGS = new String[]{"textanalytics", "textanlayti", "textanaltyics", "textanlaytics"};
+    private static final String[] STRINGS =
+            new String[]{"textanalytics", "textanlayti", "textanaltyics", "textanlaytics"};
 
     @Test
     public void test() {
@@ -45,7 +46,7 @@ public class HashUtilsTest {
     private static class TestKey {
         private final String data;
 
-        public TestKey(String data) {
+        TestKey(String data) {
             this.data = data;
         }
 
